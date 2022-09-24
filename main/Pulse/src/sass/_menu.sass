@@ -1,0 +1,35 @@
+.menu
+    position: relative
+    width: 20vw
+    height: 100vh
+    background-color:#FFA501
+    padding: 140px 0px 50px 40px
+    &__list
+        list-style-type: none
+        li
+            position: relative
+            font-weight: 700
+            font-size: 24px
+            line-height: 50px
+            &::before
+                position: absolute
+                content: ''
+                top: 21px
+                left: -30px
+                width: 15px
+                height: 15px
+                border-radius: 100%
+                border: 1px solid #000000
+            a
+                color: #FFFFFF
+                text-decoration: none
+
+    &__social
+        width: 90px
+        height: 20px
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        justify-content: space-between
