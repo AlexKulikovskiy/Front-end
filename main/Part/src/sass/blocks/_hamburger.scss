@@ -11,6 +11,7 @@
     right: 20px;
     margin: auto;
     cursor: pointer;
+    z-index: 11;
   }
   
   .stick {
@@ -20,6 +21,7 @@
     margin-bottom: 5px;
     background-color:  $main-color;
     display: inline-block;
+    z-index: 10;
   }
   
   .stick:last-child {
@@ -56,17 +58,20 @@
   }
   
   .stick-1.close {
+    z-index: 10;
     width: 8px; 
     transform: translate(27px, 26px);
     animation: stick-1-close .6s ease-out forwards;
   }
   
   .stick-2.close {
+    z-index: 10;
     transform: translate(0px, 0px) rotate(40deg);
     animation: stick-2-close .6s ease-out forwards;
   }
   
   .stick-3.close {
+    z-index: 10;
     transform: translate(0px, -23px) rotate(-40deg);
     animation: stick-3-close .6s ease-out forwards;
   }
