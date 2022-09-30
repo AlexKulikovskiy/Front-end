@@ -1,0 +1,101 @@
+.exper {
+    padding-bottom: 90px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include circle-centre;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        color: black;
+    }
+    &__divider {
+        margin: 25px auto 0 auto;
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 0 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__col {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        list-style: none;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 6px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background-color: black;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-head {
+            padding: 45px 0 0 100px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 62px;
+                left: 6px;
+                height: 2px;
+                width: 34px;
+                background-color: #000;
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 45px;
+            left: 40px;
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-body {
+            padding: 12px 0 0 40px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}
