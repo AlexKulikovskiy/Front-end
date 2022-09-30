@@ -5,6 +5,8 @@
 @import 'base/title';
 @import 'base/button';
 @import 'base/mixins';
+@import 'base/divider';
+@import 'base/subtitle';
 
 
 * {
@@ -18,15 +20,15 @@
     width: 1140px;
 }
 
+
 @import 'blocks/promo';
 @import 'blocks/aside';
 @import 'blocks/hamburger';
 @import 'blocks/skill';
 @import 'blocks/menu';
 @import 'blocks/AboutMe';
-<<<<<<< Updated upstream
-@import 'blocks/part';
-=======
+@import 'blocks/partfolio';
 @import 'blocks/exper';
->>>>>>> Stashed changes
+
+
 
